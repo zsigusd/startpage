@@ -1,0 +1,264 @@
+* {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+html,
+body,
+h1 { 
+	margin: 0; 
+	padding: 0;
+}
+
+html, 
+body  {
+	margin: 0;
+	height: 100%;
+	min-height: 100%;
+}
+
+a:active,
+a:focus {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	font-size: 10pt;
+	color: #408DB3;
+	transition: color 0.3s ease 0s;
+}
+
+a:hover {
+	color: #326085;
+}
+
+a::before,
+a::after,
+#togLinks > div::after,
+#togLinks > div::before {
+	display: inline-block;
+	opacity: 0;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+a::before,
+#togLinks > div::before {
+	margin-right: 5px;
+	content: '[';
+	transform: translateX(10px);
+}
+
+a::after,
+#togLinks > div::after {
+	margin-left: 5px;
+	content: ']';
+	transform: translateX(-10px);
+}
+
+a:hover::before,
+a:hover::after,
+#togLinks > div:hover::before,
+#togLinks > div:hover::after {
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+#center {
+	width: 960px;
+	margin: 0 auto;
+	background: #FFF;
+	min-height: 100%;
+  box-shadow: 0px 0px 21px 0px rgba(53, 53, 74, .1);
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	line-height: 21px;
+	background: #F9F9F9;
+	background: #515151;
+	background-image: url(flex-tone.png);
+}
+
+h1 {
+	margin-top: -5px;
+	padding-bottom: 10px;
+	font-weight: 500;
+	font-size: 11pt;
+	text-transform: uppercase;
+	color: #404B6A;
+}
+
+.linkList a {
+	white-space: pre;
+}
+
+.linkList a {
+	margin-right: 5px;
+}
+
+.linkList {
+	margin-left: -10px;
+}
+
+.boxCon {
+	padding-top: 32px;
+	padding-bottom: 32px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 80%;
+	border-bottom: 1px solid #edf1f2;
+	padding-right: 10%;
+	padding-left: 10%;
+
+	background-color:transparent;
+}
+
+.linkList {
+	text-align: justify;
+	line-height: 2;
+}
+
+.clear {
+	clear: both; 
+	height: 30px;
+}
+
+/**
+	RSS FEEDS
+*/
+
+#newsCon {
+	margin-top: 40px;
+	width: 80%;
+	padding-left: 10%;
+	height: 800px;
+}
+
+#newsCon a {
+	font-weight: 500;
+}
+
+#leftRss {
+	width: 45%;
+	float: left;
+}
+
+#leftRss a {
+	margin-left: -10px;
+}
+
+#rightRss {
+	text-align: right;
+	width: 45%;
+	float: right;
+}
+
+.rss-title {
+	display: none;
+}
+
+#newsCon li {
+	list-style: none;
+}
+
+#leftRss .rss-items {
+	margin-left: -40px;
+}
+
+#rightRss .rss-items {
+	margin-right: -10px;
+}
+
+.feedTitle {	
+	font-weight: 500;
+	font-size: 12pt;
+	color: #404B6A;
+}
+
+.rss-item {
+	margin-bottom: 13px;
+}
+
+/**
+	WEATHER
+*/
+
+#weatherCon {
+	width: 960px;
+	position: fixed;
+	bottom: 0;
+	padding-bottom: 20px;
+	border-top: 1px solid #edf1f2;
+	padding-top: 30px;
+	background: #fff;
+}
+
+#weather > div {
+	display: inline-block;
+	width: 150px;
+}
+
+#weather span,
+#weather #dayOne .tempNow  {
+	font-size: 14px;
+}
+
+#dayOne span {
+	position: relative;
+	top: 5px;
+}
+
+#weather .tempNow {
+	font-size: 0;
+}
+
+#weather img {
+	float: left;
+	width: 50px;
+	padding-right: 10px;
+}
+
+#weather h1 {
+	text-transform: none;
+	text-align: center;
+}
+
+#weather {
+	width: 750px;
+	margin: 0 auto;
+}
+
+#weather #dayOne {
+	position: relative;
+	top: -5px;
+}
+
+.tempNow {
+	color: #1C1841;
+}
+
+.tempHigh {
+	color: #413E6C;
+}
+
+.tempLow {
+	color: #7B7D95;
+}
+
+.tempLow {
+	margin-left: 5px;
+}
+
+#tempHighLow {
+	margin-top: -5px;
+}
+
+#dayOne span.tempNow {
+	position: relative;
+	top: 0px;
+}
